@@ -14,7 +14,6 @@ public class CalculadoraPoI : MonoBehaviour
     void Start()
     {
         textResultado.text = "";
-        Debug.Log("Loaded!");
     }
 
     // Update is called once per frame
@@ -30,14 +29,11 @@ public class CalculadoraPoI : MonoBehaviour
 
         if (num1 % 2 == 0)
         {
-            textResultado.text = "Par";
-            Debug.Log("par");
-
+            textResultado.text = "El número es par";
         }
         else
         {
-            textResultado.text = "Impar";
-            Debug.Log("imp");
+            textResultado.text = "El número es impar";
 
         }
     }
