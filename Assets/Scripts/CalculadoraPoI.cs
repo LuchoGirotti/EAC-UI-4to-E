@@ -27,15 +27,24 @@ public class CalculadoraPoI : MonoBehaviour
         num1 = int.Parse(inputNum1.text);
         Debug.Log(num1);
 
-        if (num1 % 2 == 0)
+        if (num1 <= 0)
         {
-            textResultado.text = "El número es par";
+            textResultado.text = "Ingresa un numero positivo";
+
         }
         else
         {
-            textResultado.text = "El número es impar";
+            if (num1 % 2 == 0)
+            {
+                textResultado.text = "El número es par";
+            }
+            else
+            {
+                textResultado.text = "El número es impar";
 
+            }
         }
+
     }
 
 }
